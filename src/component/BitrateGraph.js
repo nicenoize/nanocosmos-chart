@@ -51,7 +51,7 @@ const BitrateGraph = () => {
             labels: timestamps,
             datasets: [
                 {
-                    label: "Video Bitrate in k/bits",
+                    label: "Video Bitrate in kbit/s",
                     data: video,
                     borderWidth: 4,
                     fill: true,
@@ -60,7 +60,7 @@ const BitrateGraph = () => {
 
                 },
                 {
-                    label: "Audio Bitrate in k/bits",
+                    label: "Audio Bitrate in kbit/s",
                     data: audio,
                     backgroundColor: ["rgba(255, 0, 0, 0.6)"],
                     borderWidth: 4,

@@ -28,10 +28,8 @@ const BitrateGraph = () => {
         return new Intl.DateTimeFormat("en-US", options).format(date);
     }
 
-    const getRequest: AxiosRequestConfig = options
-
     const fetchTerm = (url) =>
-        axios({ ...getRequest, url }).then(res =>
+        axios.request(options).then(res =>
             res.data.data[0]
         )
 
@@ -72,7 +70,6 @@ const BitrateGraph = () => {
             ]
         })
     }, [audio])
-
 
     useEffect(() => {
         getData();
